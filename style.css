@@ -15,6 +15,19 @@ body {
     height: 100px;
 }
 
+#previous {
+    border: 1px solid red;
+    height: 50px;
+    display: flex;
+    font-size: x-large;
+}
+
+#current {
+    display: flex;
+    justify-content: flex-end;
+    font-size: xx-large;
+}
+
 .row {
     display: flex;
 }
@@ -63,7 +76,7 @@ body {
 
 
 #btnEquals {
-    width: 375px;
+    width: 250px;
     height: 80px;
     background-color: rgb(254, 216, 177);
     border: none;
@@ -86,5 +99,18 @@ body {
 }
 
 #btnC:hover {
+    background-color: darkgray;
+}
+
+#decimal {
+    width: 125px;
+    height: 80px;
+    background-color: rgb(220, 220, 220);
+    border: none;
+    font-size: 24px;
+    transition-duration: 0.4s;
+}
+
+#decimal:hover {
     background-color: darkgray;
 }

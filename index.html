@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Calculator</title>
     <link rel ="stylesheet" href = "style.css">
-    <script src ="main.js"></script>
+    <script src ="main.js" defer></script>
 </head>
 <body>
     <h1>Calculator</h1>
     <div class ="calculator">
-        <div class="display"></div>
+        <div class="display">
+            <div id="previous"></div>
+            <div id="current"></div>
+        </div>
         <div class="buttons">
             <div class ="row">
                 <button class="btn">7</button>
@@ -36,6 +39,7 @@
             </div>
             <div class ="row">
                 <button id="btnC">C</button>
+                <button id="decimal">.</button>
                 <button id="btnEquals">=</button>
             </div>
         </div>
