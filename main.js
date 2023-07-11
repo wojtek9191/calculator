@@ -5,12 +5,14 @@ const numberButtons = document.querySelectorAll('.number');
 const operatorButtons = document.querySelectorAll('.operator');
 const equalsButton = document.querySelector('.equals');
 const clearButton = document.querySelector('.clear');
+const backspaceButton = document.querySelector('.backspace');
 
 
 numberButtons.forEach((button) => button.addEventListener('click', displayNumbers));
 operatorButtons.forEach((button) => button.addEventListener('click', operate));
 equalsButton.addEventListener('click', showResult);
 clearButton.addEventListener('click', clearDisplay);
+backspaceButton.addEventListener('click', deleteLast);
 
 
 let result = '';
@@ -78,4 +80,12 @@ function clearDisplay() {
     displayOperator.innerHTML = '';
     currentNumber.innerHTML = '';
     result = '';
+}
+
+
+function deleteLast() {
+    if(currentNumber.innerHTML === '') return;
+
+    else if(currentNumber.innerHTML = currentNumber.innerHTML.slice(0, -1));
+    return;
 }
